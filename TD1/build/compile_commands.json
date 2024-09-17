@@ -1,8 +1,8 @@
 [
 {
   "directory": "C:/Users/Paul/Documents/E3IMAC/Prog_Algo/TD1/build",
-  "command": "C:\\Users\\Paul\\Documents\\GCC\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\helloImac.dir\\helloImac.cpp.obj -c C:\\Users\\Paul\\Documents\\E3IMAC\\Prog_Algo\\TD1\\helloImac.cpp",
-  "file": "C:/Users/Paul/Documents/E3IMAC/Prog_Algo/TD1/helloImac.cpp",
-  "output": "CMakeFiles/helloImac.dir/helloImac.cpp.obj"
+  "command": "C:\\Users\\Paul\\Documents\\GCC\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\imacTD1.dir\\imacTD1.cpp.obj -c C:\\Users\\Paul\\Documents\\E3IMAC\\Prog_Algo\\TD1\\imacTD1.cpp",
+  "file": "C:/Users/Paul/Documents/E3IMAC/Prog_Algo/TD1/imacTD1.cpp",
+  "output": "CMakeFiles/imacTD1.dir/imacTD1.cpp.obj"
 }
 ]

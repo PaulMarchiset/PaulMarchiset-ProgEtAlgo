@@ -116,41 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named helloImac
+# Target rules for targets named imacTD1
 
 # Build rule for target.
-helloImac: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 helloImac
-.PHONY : helloImac
+imacTD1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 imacTD1
+.PHONY : imacTD1
 
 # fast build rule for target.
-helloImac/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\helloImac.dir\build.make CMakeFiles/helloImac.dir/build
-.PHONY : helloImac/fast
+imacTD1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imacTD1.dir\build.make CMakeFiles/imacTD1.dir/build
+.PHONY : imacTD1/fast
 
-helloImac.obj: helloImac.cpp.obj
-.PHONY : helloImac.obj
+imacTD1.obj: imacTD1.cpp.obj
+.PHONY : imacTD1.obj
 
 # target to build an object file
-helloImac.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\helloImac.dir\build.make CMakeFiles/helloImac.dir/helloImac.cpp.obj
-.PHONY : helloImac.cpp.obj
+imacTD1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imacTD1.dir\build.make CMakeFiles/imacTD1.dir/imacTD1.cpp.obj
+.PHONY : imacTD1.cpp.obj
 
-helloImac.i: helloImac.cpp.i
-.PHONY : helloImac.i
+imacTD1.i: imacTD1.cpp.i
+.PHONY : imacTD1.i
 
 # target to preprocess a source file
-helloImac.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\helloImac.dir\build.make CMakeFiles/helloImac.dir/helloImac.cpp.i
-.PHONY : helloImac.cpp.i
+imacTD1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imacTD1.dir\build.make CMakeFiles/imacTD1.dir/imacTD1.cpp.i
+.PHONY : imacTD1.cpp.i
 
-helloImac.s: helloImac.cpp.s
-.PHONY : helloImac.s
+imacTD1.s: imacTD1.cpp.s
+.PHONY : imacTD1.s
 
 # target to generate assembly for a file
-helloImac.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\helloImac.dir\build.make CMakeFiles/helloImac.dir/helloImac.cpp.s
-.PHONY : helloImac.cpp.s
+imacTD1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imacTD1.dir\build.make CMakeFiles/imacTD1.dir/imacTD1.cpp.s
+.PHONY : imacTD1.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... helloImac
-	@echo ... helloImac.obj
-	@echo ... helloImac.i
-	@echo ... helloImac.s
+	@echo ... imacTD1
+	@echo ... imacTD1.obj
+	@echo ... imacTD1.i
+	@echo ... imacTD1.s
 .PHONY : help
 
 

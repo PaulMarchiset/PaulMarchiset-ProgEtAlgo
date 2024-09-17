@@ -1,0 +1,3 @@
+C:\Users\Paul\Documents\GCC\mingw64\bin\cmake.exe -E rm -f CMakeFiles\imacTD1.dir/objects.a
+C:\Users\Paul\Documents\GCC\mingw64\bin\ar.exe qc CMakeFiles\imacTD1.dir/objects.a @CMakeFiles\imacTD1.dir\objects1.rsp
+C:\Users\Paul\Documents\GCC\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\imacTD1.dir/objects.a -Wl,--no-whole-archive -o imacTD1.exe -Wl,--out-implib,libimacTD1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\imacTD1.dir\linkLibs.rsp

@@ -7,5 +7,5 @@ set(CMAKE_CXX_STANDARD 17)
 # Le nom du projet
 project(IMAC_project)
 
-# On indique que l'on veut créer un exécutable "helloImac" compilé à partir du fichier helloImac.cpp
-add_executable(helloImac helloImac.cpp)
+# On indique que l'on veut créer un exécutable "imacTD1" compilé à partir du fichier imacTD1.cpp
+add_executable(imacTD1 imacTD1.cpp)
