@@ -1,4 +1,4 @@
-#include <iostream>
+// #include <iostream>
 
 // **EXERCICE 1**
 // int main()
@@ -52,13 +52,36 @@
 //     int semaines {resteMois / 7};
 //     int jours {resteMois % 7};
 //     std::cout << "Il y a " << annees << " annees, " << mois << " mois, " << semaines << " semaines et " << jours << " jours." << std::endl;
+//     return 0;
 // }
 
 // **EXERCICE 5**
-int main() {
-    int a {0};
-    std::cout << "Entrez un chiffre entre 1 et 26 : " << std::endl;
-    std::cin >> a;
-    char lettreA {static_cast<char>(a + 64)};
-    std::cout << "La lettre correspondant a " << a << " est " << lettreA << std::endl;
-}
+// int main() {
+//     int a {0};
+//     std::cout << "Entrez un chiffre entre 1 et 26 : " << std::endl;
+//     std::cin >> a;
+//     char lettreA {static_cast<char>(a + 64)};
+//     std::cout << "La lettre correspondant a " << a << " est " << lettreA << std::endl;
+//     return 0;
+// }
+
+// **EXERCICE 6**
+// #include <iostream>
+
+// int main()
+// {
+//     float const pi {3.141592};
+//     float a {pi*3}; // je veux le résultat de pi (environ 3.141592) fois 3
+//     int b {8};
+
+//     b += 20;  // je veux ajouter le nombre 20 à la valeur de b
+
+//     b = b * 15; // je veux modifier la valeur de b en la multipliant par 15
+
+//     std::cout << "a: " << a << std::endl;
+
+//     std::cout << "b: " << b << std::endl;
+
+//     return 0;
+// }
+
