@@ -41,15 +41,24 @@
 // }
 
 // **EXERCICE 4**
+// int main() {
+//     int joursUser {0};
+//     std::cout << "Entrez un nombre de jours : " << std::endl;
+//     std::cin >> joursUser;
+//     int annees {joursUser / 365};
+//     int resteAnnees {joursUser % 365};
+//     int mois {resteAnnees / 30};
+//     int resteMois {resteAnnees % 30};
+//     int semaines {resteMois / 7};
+//     int jours {resteMois % 7};
+//     std::cout << "Il y a " << annees << " annees, " << mois << " mois, " << semaines << " semaines et " << jours << " jours." << std::endl;
+// }
+
+// **EXERCICE 5**
 int main() {
-    int joursUser {0};
-    std::cout << "Entrez un nombre de jours : " << std::endl;
-    std::cin >> joursUser;
-    int annees {joursUser / 365};
-    int resteAnnees {joursUser % 365};
-    int mois {resteAnnees / 30};
-    int resteMois {resteAnnees % 30};
-    int semaines {resteMois / 7};
-    int jours {resteMois % 7};
-    std::cout << "Il y a " << annees << " annees, " << mois << " mois, " << semaines << " semaines et " << jours << " jours." << std::endl;
+    int a {0};
+    std::cout << "Entrez un chiffre entre 1 et 26 : " << std::endl;
+    std::cin >> a;
+    char lettreA {static_cast<char>(a + 64)};
+    std::cout << "La lettre correspondant a " << a << " est " << lettreA << std::endl;
 }
