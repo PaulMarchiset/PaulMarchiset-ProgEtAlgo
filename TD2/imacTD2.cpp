@@ -39,25 +39,49 @@
 // }
 
 // **EXERCICE 3**
+// int main() {
+//     int number {0};
+//     std::cout << "Entrez un nombre entier : ";
+//     std::cin >> number;
+
+//     int verif {number % 2};
+
+//     std::string pair {(verif == 0) ? "pair" : "impair" };
+
+//     std::cout << number << " est " << pair << std::endl;
+
+//     int pairOuImpair {number};
+
+//     while (true) {
+//         pairOuImpair = pairOuImpair - 2;
+//         if (pairOuImpair < 0) {
+//             break;
+//         }
+//         std::cout << pairOuImpair << std::endl;
+//     }
+
+//     return 0;
+// }
+
+// **EXERCICE 4**
 int main() {
-    int number {0};
-    std::cout << "Entrez un nombre entier : ";
-    std::cin >> number;
+    int age {0};
+    std::cout << "Entrez votre age : ";
+    std::cin >> age;
 
-    int verif {number % 2};
+    std::cin.fail();
 
-    std::string pair {(verif == 0) ? "pair" : "impair" };
+    if (std::cin.fail()) {
+        std::cout << "Ce serait plus simple de donner son age avec des nombres" << std::endl;
+        return 1;
+    }
 
-    std::cout << number << " est " << pair << std::endl;
-
-    int pairOuImpair {number};
-
-    while (true) {
-        pairOuImpair = pairOuImpair - 2;
-        if (pairOuImpair < 0) {
-            break;
-        }
-        std::cout << pairOuImpair << std::endl;
+    if (age >= 18) {
+        std::cout << "Vous etes vieux" << std::endl;
+    } else if (age < 0) {
+        std::cout << "Ce n'est pas possible, vous n'etes pas encore ne :)" << std::endl;
+    } else {
+        std::cout << "Vous etes mineur" << std::endl;
     }
 
     return 0;
