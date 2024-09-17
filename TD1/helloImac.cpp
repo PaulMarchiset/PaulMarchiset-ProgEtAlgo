@@ -1,4 +1,4 @@
-// #include <iostream>
+#include <iostream>
 
 // **EXERCICE 1**
 // int main()
@@ -85,3 +85,29 @@
 //     return 0;
 // }
 
+// **EXERCICE Bonus**
+int main() {
+    int SacDePatates {0};
+    std::cout << "Combien voulez-vous de sacs de patates ?" << std::endl;
+    std::cin >> SacDePatates;
+    int PoidsPatates {2};
+    float PrixPatates {1.5};
+    float PrixTotalPatates {SacDePatates* PoidsPatates * PrixPatates};
+
+    int Carottes {0};
+    std::cout << "Combien voulez-vous de carottes ?" << std::endl;
+    std::cin >> Carottes;
+    float PoidsCarottes {0.15};
+    float PrixCarottes {2.5};
+    float PrixTotalCarottes {Carottes * PoidsCarottes * PrixCarottes};
+
+    int Salade {0};
+    std::cout << "Combien voulez-vous de salades ?" << std::endl;
+    std::cin >> Salade;
+    float PrixSalade {1.2};
+    float PrixTotalSalade {Salade * PrixSalade};
+
+    float PrixTotal {PrixTotalPatates + PrixTotalCarottes + PrixTotalSalade};
+    std::cout << "Le prix total est de : " << PrixTotal << "EUR" << std::endl;
+    return 0;
+}
