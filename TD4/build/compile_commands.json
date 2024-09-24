@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/Paul/Documents/E3IMAC/Prog_Algo/TD4/build",
+  "command": "C:\\Users\\Paul\\Documents\\GCC\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\imacTD4.dir\\imacTD4.cpp.obj -c C:\\Users\\Paul\\Documents\\E3IMAC\\Prog_Algo\\TD4\\imacTD4.cpp",
+  "file": "C:/Users/Paul/Documents/E3IMAC/Prog_Algo/TD4/imacTD4.cpp",
+  "output": "CMakeFiles/imacTD4.dir/imacTD4.cpp.obj"
+}
+]
