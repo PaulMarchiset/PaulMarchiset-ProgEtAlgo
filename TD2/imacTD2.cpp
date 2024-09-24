@@ -139,7 +139,7 @@
 //     {
 //         for (int count2 {0}; count2 < number - count - 1; count2 += 1)
 //         {
-//            std::cout << " "; 
+//            std::cout << " ";
 //         }
 //         for (int count2 {0}; count2 < count * 2 + 1; count2 += 1)
 //         {
@@ -173,13 +173,12 @@
 //             }
 
 //         }
-        
+
 //         std::cout << std::endl;
 //     }
 
 //     return 0;
 // }
-
 
 // **EXERCICE 7**
 
@@ -203,5 +202,176 @@
 //     return 0;
 // }
 
+// **EXERCICE BONUS**
 
+// enum class Article
+// {
+//     Alimentation,
+//     Vetements,
+//     Chaussures,
+//     Autre
+// };
 
+// std::istream &operator>>(std::istream &is, Article &article)
+// {
+//     std::string articleAsString;
+//     is >> articleAsString;
+
+//     if (articleAsString == "Alimentation")
+//     {
+//         article = Article::Alimentation;
+//     }
+//     else if (articleAsString == "Vetements")
+//     {
+//         article = Article::Vetements;
+//     }
+//     else if (articleAsString == "Chaussures")
+//     {
+//         article = Article::Chaussures;
+//     }
+//     else if (articleAsString == "Autre")
+//     {
+//         article = Article::Autre;
+//     }
+//     else
+//     {
+//         is.setstate(std::ios::failbit);
+//     }
+
+//     return is;
+// }
+
+// int main()
+// {
+
+//     float prix{0};
+//     bool carte {0};
+//     int age{0};
+
+//     std::cout << "Saisissez un type d'article : \"Alimentation\", \"Vetements\", \"Chaussures\" ou \"Autre\" " << std::endl;
+
+//     Article article;
+//     std::cin >> article;
+
+//     // On vérifie si la saisie a échoué.
+//     if (std::cin.fail())
+//     {
+//         std::cout << "Erreur de saisie, il faut saisir un type d'article valide (\"Alimentation\", \"Vetements\", \"Chaussures\" ou \"Autre\")" << std::endl;
+
+//         std::cin.clear();           // On remet std::cin dans un état fonctionnel.
+//         std::cin.ignore(255, '\n'); // On vide les caractères mémorisés.
+
+//         // le programme s'arrête si on a rencontré une erreur de saisie et renvoie 1 pour indiquer une erreur.
+//         return 1;
+//     }
+
+//     if (article == Article::Alimentation)
+//     {
+//         std::cout << "Vous avez saisi un article de type Alimentation" << std::endl;
+//     }
+//     else if (article == Article::Vetements)
+//     {
+//         std::cout << "Vous avez saisi un article de type Vetements" << std::endl;
+//     }
+//     else if (article == Article::Chaussures)
+//     {
+//         std::cout << "Vous avez saisi un article de type Chaussures" << std::endl;
+//     }
+//     else if (article == Article::Autre)
+//     {
+//         std::cout << "Vous avez saisi un article de type Autre" << std::endl;
+//     }
+
+//     std::cout << "Saisissez le prix de l'article : ";
+//     std::cin >> prix;
+
+    
+//     if (prix < 0) {
+//         std::cout << "Erreur de saisie, il faut saisir un prix valide" << std::endl;
+//         return 1;
+//     }
+//     else if (std::cin.fail())
+//     {
+//         std::cout << "Erreur de saisie, il faut saisir un prix valide" << std::endl;
+
+//         std::cin.clear();           // On remet std::cin dans un état fonctionnel.
+//         std::cin.ignore(255, '\n'); // On vide les caractères mémorisés.
+
+//         // le programme s'arrête si on a rencontré une erreur de saisie et renvoie 1 pour indiquer une erreur.
+//         return 1;
+//     }
+
+//     std::cout << "Avez-vous une carte de fidélité ? : 1 pour \"oui\" et 0 pour \"non\" ";
+//     std::cin >> carte;
+
+//     if (std::cin.fail())
+//     {
+//         std::cout << "Erreur de saisie, il faut saisir \"oui\" ou \"non\"" << std::endl;
+
+//         std::cin.clear();           // On remet std::cin dans un état fonctionnel.
+//         std::cin.ignore(255, '\n'); // On vide les caractères mémorisés.
+
+//         // le programme s'arrête si on a rencontré une erreur de saisie et renvoie 1 pour indiquer une erreur.
+//         return 1;
+//     }
+
+//     std::cout << "Saisissez votre age : ";
+//     std::cin >> age;
+
+//     if (std::cin.fail())
+//     {
+//         std::cout << "Erreur de saisie, il faut saisir un age valide" << std::endl;
+
+//         std::cin.clear();           // On remet std::cin dans un état fonctionnel.
+//         std::cin.ignore(255, '\n'); // On vide les caractères mémorisés.
+
+//         // le programme s'arrête si on a rencontré une erreur de saisie et renvoie 1 pour indiquer une erreur.
+//         return 1;
+//     } else if (age < 0) {
+//         std::cout << "Erreur de saisie, il faut saisir un age valide" << std::endl;
+//         return 1;
+//     }
+
+//     if (article == Article::Alimentation)
+//     {
+//         prix *= 0.95;
+//         if (carte)
+//         {
+//             prix *= 0.92;
+//         }
+//     }
+//     else if (article == Article::Vetements)
+//     {
+//         prix *= 0.9;
+//         if (carte)
+//         {
+//             prix *= 0.85;
+//         }
+//     }
+//     else if (article == Article::Chaussures)
+//     {
+//         prix *= 0.88;
+//         if (carte)
+//         {
+//             prix *= 0.82;
+//         }
+//     }
+//     else if (article == Article::Autre)
+//     {
+//         prix = prix;
+//     }
+
+//     if (age <= 26)
+//     {
+//         prix *= 0.9;
+//     }
+
+//     float bon {0.0f};
+//     bon = prix * 0.1;
+//     bon > 30 ? bon = 30 : bon = bon;
+
+//     std::cout << "Le prix final est de : " << prix << " EUR" << std::endl;
+//     std::cout << "Vous avez un bon d'achat de : " << bon << " EUR" << std::endl;
+
+//     return 0;
+// }
