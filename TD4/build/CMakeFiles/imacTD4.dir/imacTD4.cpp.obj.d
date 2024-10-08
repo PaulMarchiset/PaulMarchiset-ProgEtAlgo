@@ -148,4 +148,6 @@ CMakeFiles/imacTD4.dir/imacTD4.cpp.obj: \
  C:/Users/Paul/Documents/GCC/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
  C:/Users/Paul/Documents/GCC/mingw64/include/c++/14.2.0/bits/stl_vector.h \
  C:/Users/Paul/Documents/GCC/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
- C:/Users/Paul/Documents/GCC/mingw64/include/c++/14.2.0/bits/vector.tcc
+ C:/Users/Paul/Documents/GCC/mingw64/include/c++/14.2.0/bits/vector.tcc \
+ C:/Users/Paul/Documents/GCC/mingw64/include/c++/14.2.0/array \
+ C:/Users/Paul/Documents/GCC/mingw64/include/c++/14.2.0/compare
